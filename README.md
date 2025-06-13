@@ -1,43 +1,34 @@
 # FoodWasteRescue
 
-Turn surplus food in Myrtle Beach into community meals with real-time alerts and one-tap pickups.
+> Turning surplus food in Myrtle Beach into community meals
 
-## Prerequisites
-- Node.js (>=14.x)
-- npm or yarn
-- React Native CLI
-- A Supabase account
-- Git
+FoodWasteRescue is a React Native app backed by Supabase that helps local restaurants, grocery stores, and bakeries post real-time surplus food alerts and connect with volunteers and nonprofits to rescue it. By streamlining pickups and tracking impact, we reduce waste, lower landfill emissions, and feed those in need.
 
-## Installation
-```bash
-git clone https://github.com/<you>/FoodWasteRescue.git
-cd FoodWasteRescue
-npm install    # or `yarn install`
+## How It Works
 
-## Environment Variables
-1. Copy `.env.example` to `.env`
-2. Set your `SUPABASE_URL` and `SUPABASE_ANON_KEY`
+1. **Post Surplus**  
+   Businesses snap a photo, enter a brief description (e.g. “5 loaves of day-old bread”), weight estimate, pickup window, and location—then hit **Post**.  
+2. **Claim Alert**  
+   Volunteers browse open alerts in a map or list view, tap **Claim** to reserve a pickup, and coordinate via in-app chat or SMS.  
+3. **Rescue & Deliver**  
+   Rescued items are delivered to partner shelters, community fridges, and food banks.  
+4. **Track Impact**  
+   An admin dashboard aggregates metrics—pounds rescued, CO₂ saved, and active partners—to showcase our community’s impact.
 
-## Running Locally
-# Android
-npx react-native run-android
+## Key Features
 
-# iOS (macOS only)
-npx pod-install ios && npx react-native run-ios
+- **Real-time Alerts:** Instant notifications and dynamic listings for available surplus.  
+- **Map & List Views:** Find nearby pickups at a glance.  
+- **One-Tap Claim:** Reserve and confirm pickups with minimal friction.  
+- **Impact Dashboard:** Visualize total food saved and environmental benefits.  
+- **Secure Auth:** Email/password signup & login powered by Supabase Auth.
 
-## Database Schema
-Run these in Supabase SQL Editor:
-```sql
--- create businesses & surplus_alerts tables...
+## Built With
 
-## Features
-- Business signup & login
-- Post “Surplus Alert” with photo, description, weight, time window
-- Rescuer map & list view with “Claim” functionality
-- Admin dashboard showing lbs rescued & CO₂ saved
+- [React Native](https://reactnative.dev/)  
+- [Supabase](https://supabase.com/) (PostgreSQL, Auth, Realtime)  
+- [React Navigation](https://reactnavigation.org/)  
 
-## Contributing
-1. Fork the repo
-2. Create a feature branch
-3. Open a PR against `main`
+---
+
+*This README gives a high-level overview of FoodWasteRescue. For installation steps, environment setup, and contribution guidelines, check the docs folder or open an issue!*  
